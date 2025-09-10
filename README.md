@@ -1,2 +1,54 @@
-# Openmaint_install
-Скрипти для автоматизованого встановлення OpenMAINT та супутніх сервісів (Alfresco, GeoServer, BIMserver) на Ubuntu Server 24.04. // Scripts for automated installation of OpenMAINT and related services (Alfresco, GeoServer, BIMserver) on Ubuntu Server 24.04.
+Openmaint_install
+Скрипти для автоматизованого встановлення OpenMAINT та супутніх сервісів (Alfresco, GeoServer, BIMserver) на Ubuntu Server 24.04.
+
+English version below
+
+Scripts for automated installation of OpenMAINT and related services (Alfresco, GeoServer, BIMserver) on Ubuntu Server 24.04.
+
+Інструкція для завантаження та запуску скриптів
+Ця інструкція допоможе вам завантажити файли з GitHub та запустити скрипти встановлення на вашому сервері.
+
+Крок 1: Завантаження файлів з GitHub
+Для того, щоб отримати всі файли з репозиторію на ваш сервер, виконайте наступні команди.
+
+Встановіть Git (якщо він ще не встановлений):
+Спочатку оновіть список пакетів, а потім встановіть Git. Це дозволить вам використовувати команду git clone.
+
+sudo apt-get update
+sudo apt-get install git -y
+
+
+Склонуйте репозиторій:
+Команда git clone завантажить усі файли з GitHub у нову папку на вашому сервері.
+
+git clone [https://github.com/kvpia/Openmaint_install.git](https://github.com/kvpia/Openmaint_install.git)
+
+
+Перейдіть до папки:
+Перейдіть до щойно створеної папки з вашими скриптами.
+
+cd Openmaint_install
+
+
+Крок 2: Запуск встановлення
+Після того, як файли знаходяться на вашому сервері, ви можете запустити головний скрипт, який виконає всі кроки встановлення автоматично.
+
+Перейдіть до папки зі скриптами:
+Всі скрипти встановлення знаходяться у папці scripts.
+
+cd scripts
+
+
+Надайте права на виконання:
+Ця команда зробить головний скрипт виконуваним.
+
+chmod +x run_all.sh
+
+
+Запустіть скрипт:
+Нарешті, запустіть скрипт з правами адміністратора, щоб він міг виконати всі необхідні дії.
+
+sudo ./run_all.sh
+
+
+Цей процес запустить встановлення всіх компонентів: оновлення системи, встановлення Java, PostgreSQL і всіх інших сервісів.
