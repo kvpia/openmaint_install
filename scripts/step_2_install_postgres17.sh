@@ -1,4 +1,8 @@
 #!/bin/bash
+# Отримання директорії, де знаходиться поточний скрипт
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+# Підключення змінних
+source "$SCRIPT_DIR/variables.sh"
 
 print_header "Крок 2: Встановлення PostgreSQL 17 (сумісно з Ubuntu 24.04)"
 echo "Додавання офіційного репозиторію PostgreSQL..."
