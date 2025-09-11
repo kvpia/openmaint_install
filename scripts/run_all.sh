@@ -1,35 +1,36 @@
 #!/bin/bash
 
 # =====================================================================================
-# Головний скрипт для послідовного запуску всіх кроків встановлення
+# Цей скрипт послідовно запускає всі кроки встановлення Alfresco.
 # =====================================================================================
 
-# Вихід при першій помилці
-set -e
+# Використання змінних з `variables.sh`, який знаходиться в поточній директорії
+source variables.sh
 
-# Використання змінних та функцій з файлу конфігурації
-source scripts/variables.sh
+echo "Послідовний запуск скриптів встановлення OpenMaint..."
 
-# Перевірка прав sudo
-if [[ $EUID -ne 0 ]]; then
-   echo "Цей скрипт повинен бути запущений з правами 'sudo'."
-   exit 1
-fi
+# Крок 0: Встановлення попередніх вимог (pre-requisites)
+./step_0_prereqs.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 0. Вихід."; exit 1; fi
 
-echo "Запуск скриптів встановлення. Це може зайняти деякий час..."
+# Крок 1: Встановлення Java 17
+./step_1_install_java17.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 1. Вихід."; exit 1; fi
 
-./scripts/step_0_prereqs.sh
-./scripts/step_1_install_java17.sh
-./scripts/step_2_install_postgres17.sh
-./scripts/step_3_alfresco_download.sh
-./scripts/step_4_alfresco.sh
-./scripts/step_5_geoserver.sh
-./scripts/step_6_openmaint.sh
-./scripts/step_7_bimserver.sh
-./scripts/step_8_create_run_scripts.sh
+# Крок 2: Встановлення PostgreSQL 17
+./step_2_install_postgres17.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 2. Вихід."; exit 1; fi
 
-echo -e "\n\033[1;32m=================================================================\033[0m"
-echo -e "\033[1;32mВстановлення завершено!\033[0m"
-echo -e "\033[1;32m=================================================================\033[0m"
-echo "Будь ласка, запустіть наступну команду, щоб запустити всі сервіси:"
-echo "sudo ./startmaint.sh"
+# Крок 3: Підготовка системи
+./step_3_prepare_system.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 3. Вихід."; exit 1; fi
+
+# Крок 4: Завантаження та встановлення Alfresco
+./step_4_download_alfresco.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 4. Вихід."; exit 1; fi
+
+# Крок 5: Налаштування Alfresco
+./step_5_configure_alfresco.sh
+if [ $? -ne 0 ]; then echo "Помилка на кроці 5. Вихід."; exit 1; fi
+
+echo "Усі скрипти успішно виконано."
