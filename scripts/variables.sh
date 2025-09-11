@@ -19,13 +19,13 @@ ALFRESCO_USER="alfresco"
 
 # PostgreSQL
 POSTGRES_PASSWORD="postgres"
-OPENMAINT_DB_NAME="openmaint_db"
+#OPENMAINT_DB_NAME="openmaint_db"
 
 # GeoServer
-GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download"
-GEOSERVER_INSTALL_DIR="/opt/geoserver"
-GEOSERVER_USER="geoserver_user"
+#GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download"
+#GEOSERVER_INSTALL_DIR="/opt/geoserver"
+#GEOSERVER_USER="geoserver_user"
 
 # OpenMAINT
-OPENMAINT_VERSION="4.0.4"
-OPENMAINT_URL="https://downloads.sourceforge.net/project/openmaint/2.4/openmaint-4.0.4.zip"
+#OPENMAINT_VERSION="4.0.4"
+#OPENMAINT_URL="https://downloads.sourceforge.net/project/openmaint/2.4/openmaint-4.0.4.zip"
