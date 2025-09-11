@@ -11,13 +11,13 @@ source "$SCRIPT_DIR/variables.sh"
 
 print_header "Крок 4: Завантаження та встановлення Alfresco"
 
-# Каталог для всіх завантажень
-INSTALL_DIR="$SCRIPT_DIR/install_dir"
+# Каталог для всіх завантажень, розташований у домашній директорії користувача
+INSTALL_DIR="$HOME/install_dir"
 # Тимчасовий каталог для старих або пошкоджених файлів
-ALFRESCO_ARCHIVE_TEMP_DIR="$SCRIPT_DIR/alfresco_temp"
+ALFRESCO_ARCHIVE_TEMP_DIR="$INSTALL_DIR/temp"
 # Ім'я файлу інсталятора
 ALFRESCO_ARCHIVE_NAME="alfresco-community-installer-201707-linux-x64.bin"
-# MD5-хеш файлу для перевірки цілісності. Цей хеш потрібно оновлювати, якщо файл на сервері змінюється.
+# MD5-хеш файлу для перевірки цілісності
 EXPECTED_MD5="4d994362a22f367eb74a896d194c25f4"
 # Шлях до інсталятора в локальній системі
 ALFRESCO_INSTALLER_PATH="$INSTALL_DIR/$ALFRESCO_ARCHIVE_NAME"
