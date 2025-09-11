@@ -27,8 +27,8 @@ git clone [https://github.com/kvpia/Openmaint_install.git](https://github.com/kv
 Перейдіть до папки:
 Перейдіть до щойно створеної папки з вашими скриптами.
 
-cd Openmaint_install
-
+cd openmaint_install
+cd scripts
 
 Крок 2: Запуск встановлення
 Після того, як файли знаходяться на вашому сервері, ви можете запустити головний скрипт, який виконає всі кроки встановлення автоматично.
