@@ -6,7 +6,8 @@
 # Цей скрипт змінює порти в `server.xml`, копіює додаткові файли конфігурації
 # та перезапускає службу.
 # Використання змінних та функцій з `variables.sh`
-source scripts/variables.sh
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+source "$SCRIPT_DIR/variables.sh"
 
 print_header "Крок 5: Налаштування Alfresco"
 
