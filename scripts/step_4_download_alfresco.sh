@@ -10,7 +10,7 @@ source scripts/variables.sh
 print_header "Крок 4: Завантаження та встановлення Alfresco"
 
 # URL для завантаження
-ALFRESCO_DOWNLOAD_URL="https://sourceforge.net/projects/alfresco/files/Alfresco%205.2.0%20Community/alfresco-community-installer-201707-linux-x64.bin/download"
+ALFRESCO_DOWNLOAD_URL="https://sourceforge.net/projects/alfresco/files/Alfresco%20201707%20Community/alfresco-community-installer-201707-linux-x64.bin/download"
 ALFRESCO_ARCHIVE_NAME="alfresco-community-installer-201707-linux-x64.bin"
 ALFRESCO_ARCHIVE_DIR="alfresco_temp"
 
