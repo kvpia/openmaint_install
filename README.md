@@ -14,14 +14,14 @@ Scripts for automated installation of OpenMAINT and related services (Alfresco, 
 Встановіть Git (якщо він ще не встановлений):
 Спочатку оновіть список пакетів, а потім встановіть Git. Це дозволить вам використовувати команду git clone.
 
-sudo apt-get update
-sudo apt-get install git -y
+`sudo apt-get update
+sudo apt-get install git -y`
 
 
 Склонуйте репозиторій:
 Команда git clone завантажить усі файли з GitHub у нову папку на вашому сервері.
 
-git clone [https://github.com/kvpia/Openmaint_install.git](https://github.com/kvpia/Openmaint_install.git)
+`git clone [https://github.com/kvpia/Openmaint_install.git](https://github.com/kvpia/Openmaint_install.git)`
 
 
 Перейдіть до папки:
