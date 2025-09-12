@@ -5,7 +5,7 @@
 # ================================================================
 
 # Шляхи встановлення
-ALFRESCO_INSTALL_DIR="/opt/alfresco"
+ALFRESCO_INSTALL_DIR="/opt/alfresco-community"
 OPENMAINT_INSTALL_DIR="/home/openmaint/cmdbuild_30"
 
 echo "--------------------------------------------------------"
