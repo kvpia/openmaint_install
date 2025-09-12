@@ -11,8 +11,8 @@ source "$SCRIPT_DIR/variables.sh"
 
 print_header "Крок 4: Завантаження та встановлення Alfresco"
 
-# Каталог для всіх завантажень, розташований у домашній директорії користувача
-INSTALL_DIR="$HOME/install_dir"
+# Каталог для всіх завантажень, розташований у /home/ubuntu/
+INSTALL_DIR="/home/ubuntu/install_dir"
 # Тимчасовий каталог для старих або пошкоджених файлів
 ALFRESCO_ARCHIVE_TEMP_DIR="$INSTALL_DIR/temp"
 # Ім'я файлу інсталятора
