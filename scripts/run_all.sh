@@ -40,5 +40,6 @@ execute_step 3 "step_3_prepare_system.sh"
 execute_step 4 "step_4_download_alfresco.sh"
 execute_step 5 "step_5_configure_alfresco.sh"
 execute_step 6 "step_6_geoserver.sh"
+execute_step 7 "step_7_openmaint.sh"
 
 echo "Усі скрипти успішно виконано."
