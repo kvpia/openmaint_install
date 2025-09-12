@@ -10,7 +10,7 @@ source "$SCRIPT_DIR/variables.sh"
 
 print_header "Крок 4: Завантаження та встановлення Alfresco"
 
-# Каталог для всіх завантажень, розташований у /home/ubuntu/
+# Каталог для завантажень, розташований у /home/ubuntu/
 INSTALL_DIR="/home/ubuntu/install_dir"
 # Ім'я файлу інсталятора
 ALFRESCO_ARCHIVE_NAME="alfresco-community-installer-201707-linux-x64.bin"
@@ -36,17 +36,6 @@ echo "Надання прав на виконання інсталятору..."
 chmod a+x "$ALFRESCO_INSTALLER_PATH"
 
 echo "Запуск інсталятора Alfresco в текстовому режимі..."
-sudo "$ALFRESCO_INSTALLER_PATH" --mode text \
-    --enable-components alfresco,solr,share,javaalfresco \
-    --disable-components postgresql,googledocs,libreoffice \
-    --prefix "$ALFRESCO_INSTALL_DIR" \
-    --alfresco_user "$ALFRESCO_USER" \
-    --alfresco_password "admin" \
-    --postgres_password "$POSTGRES_PASSWORD" \
-    --tomcat_port 8081 \
-    --shutdown_port 8006 \
-    --database_port 5433 \
-    --base_ip "172.168.0.69" \
-    --install_as_service 0
+sudo "$ALFRESCO_INSTALLER_PATH" --mode text
 
 echo "Завантаження та встановлення завершено."
