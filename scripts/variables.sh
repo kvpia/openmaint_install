@@ -27,5 +27,9 @@ GEOSERVER_INSTALL_DIR="/opt/geoserver"
 GEOSERVER_USER="geoserver"
 
 # OpenMAINT
-#OPENMAINT_VERSION="4.0.4"
-#OPENMAINT_URL="https://downloads.sourceforge.net/project/openmaint/2.4/openmaint-4.0.4.zip"
+OPENMAINT_VERSION="4.0.4"
+# Використовуйте наданий вами URL для WAR-файлу
+OPENMAINT_WAR_URL="https://sourceforge.net/projects/openmaint/files/2.4/openmaint-2.4-4.0.4.war/download" 
+# Зауважте: ваш файл variables.sh має URL для ZIP-архіву, але для OpenMAINT потрібен WAR-файл.
+# Якщо ви хочете використати інший URL, оновіть його тут.
+OPENMAINT_USER="openmaint" 
