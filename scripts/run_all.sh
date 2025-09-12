@@ -39,5 +39,6 @@ execute_step 2 "step_2_install_postgres17.sh"
 execute_step 3 "step_3_prepare_system.sh"
 execute_step 4 "step_4_download_alfresco.sh"
 execute_step 5 "step_5_configure_alfresco.sh"
+execute_step 6 "step_6_geoserver.sh"
 
 echo "Усі скрипти успішно виконано."
