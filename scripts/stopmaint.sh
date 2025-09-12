@@ -4,9 +4,8 @@
 # Скрипт для зупинки Alfresco та OpenMAINT.
 # ================================================================
 
-# Шляхи встановлення
-ALFRESCO_INSTALL_DIR="/opt/alfresco"
-OPENMAINT_INSTALL_DIR="/home/openmaint/cmdbuild_30"
+# Підключення змінних з файлу конфігурації
+source /home/ubuntu/openmaint_install/scripts/variables.sh
 
 echo "--------------------------------------------------------"
 echo "Зупинка Alfresco та OpenMAINT..."
