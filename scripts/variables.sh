@@ -21,10 +21,10 @@ ALFRESCO_USER="alfresco"
 POSTGRES_PASSWORD="postgres"
 #OPENMAINT_DB_NAME="openmaint_db"
 
-# GeoServer
-#GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download"
-#GEOSERVER_INSTALL_DIR="/opt/geoserver"
-#GEOSERVER_USER="geoserver_user"
+# Переконайтеся, що URL вказує на потрібну версію GeoServer
+GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download" 
+GEOSERVER_INSTALL_DIR="/opt/geoserver"
+GEOSERVER_USER="geoserver"
 
 # OpenMAINT
 #OPENMAINT_VERSION="4.0.4"
