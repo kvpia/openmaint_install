@@ -19,17 +19,14 @@ ALFRESCO_USER="alfresco"
 
 # PostgreSQL
 POSTGRES_PASSWORD="postgres"
-#OPENMAINT_DB_NAME="openmaint_db"
 
-# Переконайтеся, що URL вказує на потрібну версію GeoServer
-GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download" 
+# GeoServer
+GEOSERVER_URL="https://sourceforge.net/projects/geoserver/files/GeoServer/2.21.0/geoserver-2.21.0-bin.zip/download"
 GEOSERVER_INSTALL_DIR="/opt/geoserver"
-GEOSERVER_USER="geoserver"
+GEOSERVER_USER="geoserver_user"
 
 # OpenMAINT
 OPENMAINT_VERSION="4.0.4"
-# Використовуйте наданий вами URL для WAR-файлу
-OPENMAINT_WAR_URL="https://sourceforge.net/projects/openmaint/files/2.4/openmaint-2.4-4.0.4.war/download" 
-# Зауважте: ваш файл variables.sh має URL для ZIP-архіву, але для OpenMAINT потрібен WAR-файл.
-# Якщо ви хочете використати інший URL, оновіть його тут.
-OPENMAINT_USER="openmaint" 
+OPENMAINT_URL="https://netactuate.dl.sourceforge.net/project/openmaint/2.4/openmaint-2.4-4.0.4.war"
+OPENMAINT_INSTALL_DIR="/home/openmaint/cmdbuild_30"
+OPENMAINT_USER="openmaint"
