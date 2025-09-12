@@ -18,7 +18,7 @@ ALFRESCO_ARCHIVE_TEMP_DIR="$INSTALL_DIR/temp"
 # Ім'я файлу інсталятора
 ALFRESCO_ARCHIVE_NAME="alfresco-community-installer-201707-linux-x64.bin"
 # MD5-хеш файлу для перевірки цілісності
-EXPECTED_MD5="4d994362a22f367eb74a896d194c25f4"
+EXPECTED_MD5="e903bbdcb3b8a16e48f77dd91276b41d"
 # Шлях до інсталятора в локальній системі
 ALFRESCO_INSTALLER_PATH="$INSTALL_DIR/$ALFRESCO_ARCHIVE_NAME"
 
