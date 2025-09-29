@@ -27,7 +27,7 @@ sudo apt install git -y
 та надайте права на виконання:
 Ця команда зробить скрипти виконуваними.
 
-`cd openmaint_install
+`cd openmaint_install;
 sudo find scripts/ -name "*.sh" -exec chmod +x {} \;`
 
 Крок 2: Запуск встановлення
